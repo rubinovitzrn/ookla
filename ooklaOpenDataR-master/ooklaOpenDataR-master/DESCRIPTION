@@ -1,0 +1,49 @@
+Type: Package
+Package: ooklaOpenDataR
+Title: Work with 'Speedtest by Ookla' Global Internet Performance Data
+Version: 0.1.0
+Authors@R:
+    c(person(given = "Katie",
+             family = "Jolly",
+             role = c("aut", "cre"),
+             email = "katie.jolly@ookla.com"),
+      person(given = "Sheryl",
+             family = "Petersen",
+             role = "aut"),
+      person(given = "Brian",
+             family = "Connelly",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-9948-0379")),
+      person(given = "Ookla",
+             role = c("cph", "fnd"),
+             email = "opendata@ookla.com"))
+Maintainer: Katie Jolly <katie.jolly@ookla.com>
+Description: The 'Speedtest by Ookla' Global Fixed and Mobile
+    Network Performance Maps open data set provides network performance
+    metrics in zoom level 16 web Mercator tiles (approximately 610.8
+    meters by 610.8 meters at the equator). Download speed, upload speed,
+    and latency are collected via the 'Speedtest by Ookla' applications
+    for 'Android' and 'iOS' and averaged for each tile.  Measurements are
+    filtered to results containing GPS-quality location accuracy.
+    'ooklaOpenDataR' includes tools for retrieving and working with this
+    data set.
+License: MIT + file LICENSE
+Imports: 
+    arrow,
+    assertthat,
+    httr,
+    rlang,
+    slippymath,
+    stringr
+Suggests: 
+    knitr,
+    mapview,
+    rmarkdown,
+    sf,
+    testthat
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
